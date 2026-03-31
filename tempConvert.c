@@ -1,11 +1,8 @@
 #include <stdio.h>
 
 // make Celcius
-double f_to_c(double f) {
-  
-
-
-  double c = (double)5/9 * (f - 32); //failing to calc here
+double f_to_c(double f) {  
+  double c = (double)5/9 * (f - 32);
   printf("%d \n", c);
   return c;
 }
@@ -35,8 +32,6 @@ float c_to_k(float c) {
 float f_to_k(float f) {
   float c = f_to_c(f);
   float k = c + 273.15;
-  printf("f to k has been called \n");
-  printf("%f \n %f \n",c, k );
   return k;
 }
 
@@ -84,7 +79,6 @@ int main() {
     }
     else if(outTypeFull[0] == 'K'){
       outVal = f_to_k(valIn);
-      printf("f to k shouldve been called \n");
     }
   }
   else if (inTypeFull[0] == 'K') { // From K
