@@ -4,7 +4,6 @@
 // make Celcius
 double f_to_c(double f) {
   double c = (double)5 / 9 * (f - 32);
-  printf("%d \n", c);
   return c;
 }
 float k_to_c(float k) {
