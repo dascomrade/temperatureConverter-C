@@ -8,7 +8,7 @@ double f_to_c(double f) {
   return c;
 }
 float k_to_c(float k) {
-  float c = k - 273.15;
+  float c = k + 273.15;
   return c;
 }
 
@@ -32,7 +32,7 @@ float c_to_k(float c) {
 
 float f_to_k(float f) {
   float c = f_to_c(f);
-  float k = c + 273.15;
+  float k = c - 273.15;
   return k;
 }
 
